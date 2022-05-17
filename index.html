@@ -13,21 +13,24 @@
       <script type="text/jsx">
         const app = document.getElementById('app');
         
-        function Header() {
-          return (
-            <h1>Develop. Preview. Ship. 🚀</h1>
-            )
-        };
+         function Header({title}) {
+          console.log(title); // { title: "Angelo" }
+          return <h1>{props.title}</h1>;
+          }
+        //    return 
+        //    <h1>Develop. Preview. Ship. 🚀</h1>;
+        //    
+      //  };
 
         function HomePage() {
           return (
             <div>
-              <Header />
+              <Header title="Angelo Santos" />
             </div>
             )
         };
 
-        ReactDOM.render(<HomePage />, app);
+        //ReactDOM.render(<HomePage />, app);
       </script>
   <link rel="stylesheet" href="/css/style.css" </link>
 </head>
@@ -35,12 +38,7 @@
 <body>
   <div class="img4.jpg">
     <div class="ptext">
-      <span class="border">
-       # <script type="text/jsx">
-        #  const app = document.getElementById('app');
-         # ReactDOM.render(<h2>Angelo Santos</h2>, app);
-        #</script>
-      </span>
+      <span class="border"></span>
     </div>
   </div>
 
